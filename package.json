@@ -1,0 +1,36 @@
+{
+  "name": "mcp-registry-analysis",
+  "version": "1.0.0",
+  "description": "Analyze the official MCP Registry for server bundleability",
+  "type": "module",
+  "main": "dist/analyze.js",
+  "bin": {
+    "mcp-registry-analysis": "dist/analyze.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "analyze": "npx tsx src/analyze.ts",
+    "analyze:json": "npx tsx src/analyze.ts --json",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "registry",
+    "analysis"
+  ],
+  "author": "NimbleBrain <hello@nimblebrain.ai>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NimbleBrainInc/mcp-registry-analysis"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
